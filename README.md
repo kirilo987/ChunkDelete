@@ -12,7 +12,7 @@ RandomChunkDeleter is a Minecraft plugin designed to randomly delete chunks from
 
 ## Installation
 
-1. Download the latest version of the plugin from the [releases page](https://github.com/yourusername/RandomChunkDeleter/releases).
+1. Download the latest version of the plugin from the [releases page](https://github.com/kirilo987/ChunkDelete/releases).
 2. Place the downloaded `.jar` file into your server's `plugins` folder.
 3. Restart the server.
 
