@@ -21,6 +21,19 @@ RandomChunkDeleter is a Minecraft plugin designed to randomly delete chunks from
 Edit the `plugin.yml` file to add or modify the list of protected chunks.
 
 ```yaml
-protectedChunks:
-  - "-4551,12"
-  - "1710,79"
+    @Override
+    public void onEnable() {
+        getLogger().info("Плагін RandomChunkDeleter активовано!");
+
+        // Додаємо захищені чанки
+        protectedChunks.add(""); //кординати чанку
+        protectedChunks.add(""); //кординати чанку
+
+        // Запуск задачі, яка виконується раз на годину
+        new BukkitRunnable() {
+            @Override
+            public void run() {
+                deleteRandomChunk();
+            }
+        }.runTaskTimer(this, 0, 20 * 60 * 60); // Запуск кожні 3600 секунд (1 година)
+    }
