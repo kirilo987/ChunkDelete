@@ -33,7 +33,7 @@ public class RandomChunkDeleter extends JavaPlugin {
             public void run() {
                 deleteRandomChunk();
             }
-        }.runTaskTimer(this, 0, 20 * 60 * 60); // Запуск кожні 3600 секунд (1 година)
+        }.runTaskTimer(this, 0, 5 * 60); // Запуск кожні 3600 секунд (1 година)
     }
 
     @Override
